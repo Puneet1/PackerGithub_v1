@@ -15,12 +15,12 @@
 # views them; you can change their type later on. Read the variables type
 # constraints documentation
 # https://www.packer.io/docs/templates/hcl_templates/variables#type-constraints for more info.
-variable "aws_access_key_id" {
+variable "AWS_ACCESS_KEY_ID" {
   type    = string
   default = "${env("AWS_ACCESS_KEY_ID")}"
 }
 
-variable "aws_secret_access_key" {
+variable "AWS_SECRET_ACCESS_KEY" {
   type    = string
   default = "${env("AWS_SECRET_ACCESS_KEY")}"
 }
