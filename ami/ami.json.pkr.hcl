@@ -17,12 +17,12 @@
 # https://www.packer.io/docs/templates/hcl_templates/variables#type-constraints for more info.
 variable "AWS_ACCESS_KEY_ID" {
   type    = string
-  default = "${env("AWS_ACCESS_KEY_ID")}"
+  default = "${env("AWS_ACCESS_KEY")}"
 }
 
 variable "AWS_SECRET_ACCESS_KEY" {
   type    = string
-  default = "${env("AWS_SECRET_ACCESS_KEY")}"
+  default = "${env("AWS_SECRET_KEY")}"
 }
 
 variable "region" {
