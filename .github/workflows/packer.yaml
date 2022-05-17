@@ -4,6 +4,8 @@ on:
   push:
     branches:
         - 'main'
+    paths:
+        -  './ami'
 jobs:
   packer_build:
     runs-on: ubuntu-latest
