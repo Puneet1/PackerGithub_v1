@@ -72,7 +72,7 @@ build {
     source      = "./hello.txt"
   }
     provisioner "shell" {
-    script  = "./script.sh"
+    script  = "./vault-install-script.sh"
   }
 
 }
