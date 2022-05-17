@@ -1,9 +1,9 @@
-terraform {
-  cloud {
-    organization = "hashicorp-demo-20220519"
+# terraform {
+#   cloud {
+#     organization = "hashicorp-demo-20220519"
 
-    workspaces {
-      name = "PackerGithub_v1"
-    }
-  }
-}
+#     workspaces {
+#       name = "PackerGithub_v1_fixed"
+#     }
+#   }
+# }
