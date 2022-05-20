@@ -1,0 +1,2 @@
+Hi Packer,
+This is a sample file to show copy from local to ami

@@ -1,11 +1,12 @@
 name: Run packer build on a template file
-
+#Actions trigger on push to main branch under ami directory
 on:
   push:
     branches:
         - 'main'
     paths:
         -  './ami'
+#Job below runs packer build on the packer build file
 jobs:
   packer_build:
     runs-on: ubuntu-latest
@@ -17,6 +18,7 @@ jobs:
           templateFile: 'ami.json.pkr.hcl'
           workingDir: 'ami'
           #varFile: 'variables.json'
+#Secrets and regions are defined in the Github environment and marked sensitive
         env:
           AWS_ACCESS_KEY_ID: ${{ secrets.AWS_ACCESS_KEY }}
           AWS_SECRET_ACCESS_KEY: ${{ secrets.AWS_SECRET_KEY }}
