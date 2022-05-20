@@ -1,6 +1,6 @@
 resource "aws_instance" "vault_instance" {
-  ami           = "ami-02541b8af977f6cdd"
-  instance_type = "t2.large"
+  ami           = var.ec2_ami
+  instance_type = var.ec2_type
 
   tags = {
     Name = "Terraform_Cloud_Demo_Instance"
