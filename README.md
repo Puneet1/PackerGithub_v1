@@ -1,5 +1,12 @@
 # PackerGithub_v1
 
+## Pre-requisites:
+- Github account
+- Terraform Cloud Account
+- AWS Account
+- Packer locally installed for testing
+
+
 ## Note:
 1. Terraform Cloud working and code was planned for the Demo.
 2. Some code is changed/intentionally missing and was planned during the demo and was part of showcasing features such as remote backend storage and conig.
@@ -28,16 +35,16 @@ This directory primarily contains the Packer code
 
  ## Terraform
  This directory primarily contains the Terraform code
- module directory: contains the ec2 module code for using the packer built AMI
-    standalone_ec2.tf - contains the code for ec2 resource.
-    variables.tf - contains variables referenced in the above files.
+ - module directory: contains the ec2 module code for using the packer built AMI
+    - standalone_ec2.tf - contains the code for ec2 resource.
+    - variables.tf - contains variables referenced in the above files.
 
- data.tf - contains the data block for referencing the ami built with packer.
- main.tf - calls the ec2 module for creating the VM in the Cloud.
- output.tf - contains the output code that provider information for the provisioning steps
- provider.tf - contains the provider information "aws"
- terraform_integrate.tf - contains workspace and organization information for Terraform Cloud CLI feature showcasing.
- variables.tf - contains the variables references in various file in the terraform code.
+ - data.tf - contains the data block for referencing the ami built with packer.
+ - main.tf - calls the ec2 module for creating the VM in the Cloud.
+ - output.tf - contains the output code that provider information for the provisioning steps
+ - provider.tf - contains the provider information "aws"
+ - terraform_integrate.tf - contains workspace and organization information for Terraform Cloud CLI feature showcasing.
+ - variables.tf - contains the variables references in various file in the terraform code.
 
 
 
